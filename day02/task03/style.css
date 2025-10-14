@@ -21,7 +21,10 @@ section {
   gap: 10px;
 }
 
-header, section, footer, article {width: 100%;}
+header {width: 50%;}
+section {width: 100%;}
+article {width: 50%;}
+footer {width: 100%;}
 
 /* cache les articles à partir du 3e */
 section article:nth-child(n+3) {display: none;} 
@@ -30,10 +33,11 @@ section article:nth-child(n+3) {display: none;}
 section article {margin: 0;}
 
 /* couleurs des zones */
-.blue { background-color: #67B3DD; min-height: 100px; }
-.green { background-color: #9EE062; min-height: 200px; }
-.yellow{ background-color: #FEDF6B; min-height: 200px; }
-.red { background-color: #FC302D; min-height: 100px; }
+.blue { background-color: #67B3DD; min-height: 100px;}
+.green { background-color: #9EE062; min-height: 200px;}
+.yellow{ background-color: #FEDF6B; min-height: 200px;}
+.purple{background-color: #6B2683; min-height: 200px;}
+.red { background-color: #FC302D; min-height: 100px;}
 
-@media screen and (max-width: 767px) {}
+@media screen (max-width: 767px) {}
 @media screen (min-width: 768px) and (max-width: 1023px) {}
