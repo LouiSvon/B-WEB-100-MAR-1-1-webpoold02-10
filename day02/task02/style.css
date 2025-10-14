@@ -30,9 +30,9 @@ section article:nth-child(n+3) {display: none;}
 section article {margin: 0;}
 
 /* couleurs des zones */
-.box1 { background-color: #67B3DD; min-height: 100px; }
-.box2 { background-color: #9EE062; min-height: 200px; }
-.box3, .box4 { background-color: #FEDF6B; min-height: 200px; }
-.box5 { background-color: #FC302D; min-height: 100px; }
+.blue { background-color: #67B3DD; min-height: 100px; }
+.green { background-color: #9EE062; min-height: 200px; }
+.yellow{ background-color: #FEDF6B; min-height: 200px; }
+.red { background-color: #FC302D; min-height: 100px; }
 
-@media screen and (max-width: 767px) {}
+@media screen (min-width: 768px) and (max-width: 1023px) {}
