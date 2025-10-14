@@ -1,0 +1,23 @@
+/* flex box -- style général */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 3px;
+}
+
+header, section, footer, article {width: 100%;}
+
+section article:nth-child(n+3) {display: none;}
+
+section article {
+  margin-bottom: 10px;
+}
+
+/* couleurs des zones */
+.box1 { background-color: #67B3DD; }
+.box2 { background-color: #9EE062; }
+.box3, .box4 { background-color: #FEDF6B; }
+.box5 { background-color: #FC302D; }
+
+@media screen and (max-width: 767px) {}
