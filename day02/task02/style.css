@@ -3,21 +3,36 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 3px;
+  margin: 10px;
+  min-height: 100vh;
+}
+
+header, footer {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* section principale prend l'espace restant */
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 header, section, footer, article {width: 100%;}
 
-section article:nth-child(n+3) {display: none;}
+/* cache les articles à partir du 3e */
+section article:nth-child(n+3) {display: none;} 
 
-section article {
-  margin-bottom: 10px;
-}
+/* on utilise gap pour l'espacement */
+section article {margin: 0;}
 
 /* couleurs des zones */
-.box1 { background-color: #67B3DD; }
-.box2 { background-color: #9EE062; }
-.box3, .box4 { background-color: #FEDF6B; }
-.box5 { background-color: #FC302D; }
+.box1 { background-color: #67B3DD; min-height: 100px; }
+.box2 { background-color: #9EE062; min-height: 200px; }
+.box3, .box4 { background-color: #FEDF6B; min-height: 200px; }
+.box5 { background-color: #FC302D; min-height: 100px; }
 
 @media screen and (max-width: 767px) {}
